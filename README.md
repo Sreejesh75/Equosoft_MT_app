@@ -1,16 +1,36 @@
-# machine_test
+🚀 Features
+✔ Fetch all products from public API
+✔ Extract unique categories from product list
+✔ Display categories in a clean GridView
+✔ Tap a category → Show filtered product list
+✔ Tap a product → Navigate to Product Detail Screen
+✔ Smooth architecture using Provider
+✔ Reusable API client
+✔ Fully responsive UI
 
-A new Flutter project.
 
-## Getting Started
+🏗 Project Architecture (Feature-Based)
+This structure separates:
 
-This project is a starting point for a Flutter application.
+Data layer → API, models
 
-A few resources to get you started if this is your first Flutter project:
+Provider layer → State management
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+UI/Presentation layer → Screens
+🧠 State Management — Provider
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ProductProvider loads the products
+
+Extracts unique categories from the product list
+
+Filters products based on the selected category
+
+Notifies UI using ChangeNotifier
+
+This ensures:
+
+Clean separation of concerns
+
+Easy testing
+
+Scalable architecture
